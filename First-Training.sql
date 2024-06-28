@@ -40,8 +40,8 @@ select * from payment;
 
 SELECT payment_id, customer_id, amount, 
 CASE 
-	WHEN amount >3.00 THEN 'good purchase'
-    WHEN amount <3.00 THEN 'neutral'
+	WHEN amount >2.5.00 THEN 'good purchase'
+    WHEN amount <2.5.00 THEN 'neutral'
 END AS Purchases,
 CASE
 	WHEN customer_id >2 THEN 'new client'
